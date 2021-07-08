@@ -26,4 +26,4 @@ http://localhost:3000
 ```
 
 ## License
-[MIT](License)
+[MIT](LICENSE)
