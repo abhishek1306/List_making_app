@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+  background: #594945;
+}
+
+
+ul li:hover {
+  background: #ddd;
+}
+
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.header {
+  background-color: #00ffbf;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 20%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+.addBtn {
+  padding: 10px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+</style>
+</head>
+<body>
+  <script src="/js/file.js"></script>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="\index.html">Home</a></li>
+      
+    </ul>
+  </div>
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Grocery List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  
+</ul>
+
+<script src="js\grocery.js"></script>
+
+</body>
+</html>

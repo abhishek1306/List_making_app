@@ -1,0 +1,21 @@
+{
+  "name": "list_making_app",
+  "version": "1.0.0",
+  "description": "make list of grocery , todo and camping",
+  "main": "app.js",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": [
+    "list",
+    "grocery list",
+    "todo list",
+    "camping list"
+  ],
+  "author": "Abhishek Sharma",
+  "license": "ISC"
+}
