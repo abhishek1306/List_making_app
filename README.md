@@ -5,7 +5,7 @@ In this project you can make a list like : camping ,todo and grocery.
 step 1:
 open cmd and clone repository using
 ```bash
-$ git clone 
+$ git clone https://github.com/abhishek1306/List_making_app.git
 ```
 step 2:
 run npm command for node modules
